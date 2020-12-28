@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E0B9CC6C174D67DC00698194 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B9CC6B174D67DC00698194 /* UIKit.framework */; };
+		E0B9CC6E174D67DC00698194 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B9CC6D174D67DC00698194 /* Foundation.framework */; };
+		E0B9CC70174D67DC00698194 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B9CC6F174D67DC00698194 /* CoreGraphics.framework */; };
+		E0B9CC76174D67DC00698194 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0B9CC74174D67DC00698194 /* InfoPlist.strings */; };
+		E0B9CC78174D67DC00698194 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B9CC77174D67DC00698194 /* main.m */; };
+		E0B9CC7C174D67DC00698194 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B9CC7B174D67DC00698194 /* AppDelegate.m */; };
+		E0B9CC7E174D67DC00698194 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E0B9CC7D174D67DC00698194 /* Default.png */; };
+		E0B9CC80174D67DC00698194 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0B9CC7F174D67DC00698194 /* Default@2x.png */; };
+		E0B9CC82174D67DC00698194 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0B9CC81174D67DC00698194 /* Default-568h@2x.png */; };
+		E0B9CC85174D67DC00698194 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0B9CC83174D67DC00698194 /* MainStoryboard.storyboard */; };
+		E0B9CC88174D67DC00698194 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B9CC87174D67DC00698194 /* ViewController.m */; };
+		E0B9CC92174D6A1300698194 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B9CC91174D6A1300698194 /* CFNetwork.framework */; };
+		E0B9CCD4174D6B3C00698194 /* logging_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = E0B9CCC7174D6B3C00698194 /* logging_mosq.c */; };
+		E0B9CCD5174D6B3C00698194 /* memory_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = E0B9CCC8174D6B3C00698194 /* memory_mosq.c */; };
+		E0B9CCD6174D6B3C00698194 /* messages_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = E0B9CCC9174D6B3C00698194 /* messages_mosq.c */; };
+		E0B9CCD7174D6B3C00698194 /* mosquitto.c in Sources */ = {isa = PBXBuildFile; fileRef = E0B9CCCA174D6B3C00698194 /* mosquitto.c */; };
+		E0B9CCD8174D6B3C00698194 /* net_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = E0B9CCCB174D6B3C00698194 /* net_mosq.c */; };
+		E0B9CCD9174D6B3C00698194 /* read_handle_client.c in Sources */ = {isa = PBXBuildFile; fileRef = E0B9CCCC174D6B3C00698194 /* read_handle_client.c */; };
+		E0B9CCDA174D6B3C00698194 /* read_handle_shared.c in Sources */ = {isa = PBXBuildFile; fileRef = E0B9CCCD174D6B3C00698194 /* read_handle_shared.c */; };
+		E0B9CCDB174D6B3C00698194 /* read_handle.c in Sources */ = {isa = PBXBuildFile; fileRef = E0B9CCCE174D6B3C00698194 /* read_handle.c */; };
+		E0B9CCDC174D6B3C00698194 /* send_client_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = E0B9CCCF174D6B3C00698194 /* send_client_mosq.c */; };
+		E0B9CCDD174D6B3C00698194 /* send_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = E0B9CCD0174D6B3C00698194 /* send_mosq.c */; };
+		E0B9CCDE174D6B3C00698194 /* thread_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = E0B9CCD1174D6B3C00698194 /* thread_mosq.c */; };
+		E0B9CCDF174D6B3C00698194 /* util_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = E0B9CCD2174D6B3C00698194 /* util_mosq.c */; };
+		E0B9CCE0174D6B3C00698194 /* will_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = E0B9CCD3174D6B3C00698194 /* will_mosq.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E0B9CC68174D67DC00698194 /* RabbitmqCookBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RabbitmqCookBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0B9CC6B174D67DC00698194 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E0B9CC6D174D67DC00698194 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E0B9CC6F174D67DC00698194 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E0B9CC73174D67DC00698194 /* RabbitmqCookBook-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RabbitmqCookBook-Info.plist"; sourceTree = "<group>"; };
+		E0B9CC75174D67DC00698194 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E0B9CC77174D67DC00698194 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E0B9CC79174D67DC00698194 /* RabbitmqCookBook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RabbitmqCookBook-Prefix.pch"; sourceTree = "<group>"; };
+		E0B9CC7A174D67DC00698194 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E0B9CC7B174D67DC00698194 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E0B9CC7D174D67DC00698194 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E0B9CC7F174D67DC00698194 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E0B9CC81174D67DC00698194 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E0B9CC84174D67DC00698194 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		E0B9CC86174D67DC00698194 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E0B9CC87174D67DC00698194 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E0B9CC91174D6A1300698194 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		E0B9CCC7174D6B3C00698194 /* logging_mosq.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = logging_mosq.c; path = libmosquitto/logging_mosq.c; sourceTree = "<group>"; };
+		E0B9CCC8174D6B3C00698194 /* memory_mosq.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = memory_mosq.c; path = libmosquitto/memory_mosq.c; sourceTree = "<group>"; };
+		E0B9CCC9174D6B3C00698194 /* messages_mosq.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = messages_mosq.c; path = libmosquitto/messages_mosq.c; sourceTree = "<group>"; };
+		E0B9CCCA174D6B3C00698194 /* mosquitto.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = mosquitto.c; path = libmosquitto/mosquitto.c; sourceTree = "<group>"; };
+		E0B9CCCB174D6B3C00698194 /* net_mosq.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = net_mosq.c; path = libmosquitto/net_mosq.c; sourceTree = "<group>"; };
+		E0B9CCCC174D6B3C00698194 /* read_handle_client.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = read_handle_client.c; path = libmosquitto/read_handle_client.c; sourceTree = "<group>"; };
+		E0B9CCCD174D6B3C00698194 /* read_handle_shared.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = read_handle_shared.c; path = libmosquitto/read_handle_shared.c; sourceTree = "<group>"; };
+		E0B9CCCE174D6B3C00698194 /* read_handle.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = read_handle.c; path = libmosquitto/read_handle.c; sourceTree = "<group>"; };
+		E0B9CCCF174D6B3C00698194 /* send_client_mosq.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = send_client_mosq.c; path = libmosquitto/send_client_mosq.c; sourceTree = "<group>"; };
+		E0B9CCD0174D6B3C00698194 /* send_mosq.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = send_mosq.c; path = libmosquitto/send_mosq.c; sourceTree = "<group>"; };
+		E0B9CCD1174D6B3C00698194 /* thread_mosq.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = thread_mosq.c; path = libmosquitto/thread_mosq.c; sourceTree = "<group>"; };
+		E0B9CCD2174D6B3C00698194 /* util_mosq.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = util_mosq.c; path = libmosquitto/util_mosq.c; sourceTree = "<group>"; };
+		E0B9CCD3174D6B3C00698194 /* will_mosq.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = will_mosq.c; path = libmosquitto/will_mosq.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0B9CC65174D67DC00698194 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B9CC92174D6A1300698194 /* CFNetwork.framework in Frameworks */,
+				E0B9CC6C174D67DC00698194 /* UIKit.framework in Frameworks */,
+				E0B9CC6E174D67DC00698194 /* Foundation.framework in Frameworks */,
+				E0B9CC70174D67DC00698194 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E0B9CC5F174D67DC00698194 = {
+			isa = PBXGroup;
+			children = (
+				E0B9CCC7174D6B3C00698194 /* logging_mosq.c */,
+				E0B9CCC8174D6B3C00698194 /* memory_mosq.c */,
+				E0B9CCC9174D6B3C00698194 /* messages_mosq.c */,
+				E0B9CCCA174D6B3C00698194 /* mosquitto.c */,
+				E0B9CCCB174D6B3C00698194 /* net_mosq.c */,
+				E0B9CCCC174D6B3C00698194 /* read_handle_client.c */,
+				E0B9CCCD174D6B3C00698194 /* read_handle_shared.c */,
+				E0B9CCCE174D6B3C00698194 /* read_handle.c */,
+				E0B9CCCF174D6B3C00698194 /* send_client_mosq.c */,
+				E0B9CCD0174D6B3C00698194 /* send_mosq.c */,
+				E0B9CCD1174D6B3C00698194 /* thread_mosq.c */,
+				E0B9CCD2174D6B3C00698194 /* util_mosq.c */,
+				E0B9CCD3174D6B3C00698194 /* will_mosq.c */,
+				E0B9CC91174D6A1300698194 /* CFNetwork.framework */,
+				E0B9CC71174D67DC00698194 /* RabbitmqCookBook */,
+				E0B9CC6A174D67DC00698194 /* Frameworks */,
+				E0B9CC69174D67DC00698194 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E0B9CC69174D67DC00698194 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0B9CC68174D67DC00698194 /* RabbitmqCookBook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0B9CC6A174D67DC00698194 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0B9CC6B174D67DC00698194 /* UIKit.framework */,
+				E0B9CC6D174D67DC00698194 /* Foundation.framework */,
+				E0B9CC6F174D67DC00698194 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0B9CC71174D67DC00698194 /* RabbitmqCookBook */ = {
+			isa = PBXGroup;
+			children = (
+				E0B9CC7A174D67DC00698194 /* AppDelegate.h */,
+				E0B9CC7B174D67DC00698194 /* AppDelegate.m */,
+				E0B9CC83174D67DC00698194 /* MainStoryboard.storyboard */,
+				E0B9CC86174D67DC00698194 /* ViewController.h */,
+				E0B9CC87174D67DC00698194 /* ViewController.m */,
+				E0B9CC72174D67DC00698194 /* Supporting Files */,
+			);
+			path = RabbitmqCookBook;
+			sourceTree = "<group>";
+		};
+		E0B9CC72174D67DC00698194 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0B9CC73174D67DC00698194 /* RabbitmqCookBook-Info.plist */,
+				E0B9CC74174D67DC00698194 /* InfoPlist.strings */,
+				E0B9CC77174D67DC00698194 /* main.m */,
+				E0B9CC79174D67DC00698194 /* RabbitmqCookBook-Prefix.pch */,
+				E0B9CC7D174D67DC00698194 /* Default.png */,
+				E0B9CC7F174D67DC00698194 /* Default@2x.png */,
+				E0B9CC81174D67DC00698194 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0B9CC67174D67DC00698194 /* RabbitmqCookBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0B9CC8B174D67DC00698194 /* Build configuration list for PBXNativeTarget "RabbitmqCookBook" */;
+			buildPhases = (
+				E0B9CC64174D67DC00698194 /* Sources */,
+				E0B9CC65174D67DC00698194 /* Frameworks */,
+				E0B9CC66174D67DC00698194 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RabbitmqCookBook;
+			productName = RabbitmqCookBook;
+			productReference = E0B9CC68174D67DC00698194 /* RabbitmqCookBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0B9CC60174D67DC00698194 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Gabriele Santomaggio";
+			};
+			buildConfigurationList = E0B9CC63174D67DC00698194 /* Build configuration list for PBXProject "RabbitmqCookBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E0B9CC5F174D67DC00698194;
+			productRefGroup = E0B9CC69174D67DC00698194 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0B9CC67174D67DC00698194 /* RabbitmqCookBook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0B9CC66174D67DC00698194 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B9CC76174D67DC00698194 /* InfoPlist.strings in Resources */,
+				E0B9CC7E174D67DC00698194 /* Default.png in Resources */,
+				E0B9CC80174D67DC00698194 /* Default@2x.png in Resources */,
+				E0B9CC82174D67DC00698194 /* Default-568h@2x.png in Resources */,
+				E0B9CC85174D67DC00698194 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0B9CC64174D67DC00698194 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B9CCD4174D6B3C00698194 /* logging_mosq.c in Sources */,
+				E0B9CCD5174D6B3C00698194 /* memory_mosq.c in Sources */,
+				E0B9CCD6174D6B3C00698194 /* messages_mosq.c in Sources */,
+				E0B9CCD7174D6B3C00698194 /* mosquitto.c in Sources */,
+				E0B9CCD8174D6B3C00698194 /* net_mosq.c in Sources */,
+				E0B9CCD9174D6B3C00698194 /* read_handle_client.c in Sources */,
+				E0B9CCDA174D6B3C00698194 /* read_handle_shared.c in Sources */,
+				E0B9CCDB174D6B3C00698194 /* read_handle.c in Sources */,
+				E0B9CCDC174D6B3C00698194 /* send_client_mosq.c in Sources */,
+				E0B9CCDD174D6B3C00698194 /* send_mosq.c in Sources */,
+				E0B9CCDE174D6B3C00698194 /* thread_mosq.c in Sources */,
+				E0B9CCDF174D6B3C00698194 /* util_mosq.c in Sources */,
+				E0B9CCE0174D6B3C00698194 /* will_mosq.c in Sources */,
+				E0B9CC78174D67DC00698194 /* main.m in Sources */,
+				E0B9CC7C174D67DC00698194 /* AppDelegate.m in Sources */,
+				E0B9CC88174D67DC00698194 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E0B9CC74174D67DC00698194 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0B9CC75174D67DC00698194 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E0B9CC83174D67DC00698194 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0B9CC84174D67DC00698194 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0B9CC89174D67DC00698194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = libmosquitto;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E0B9CC8A174D67DC00698194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = libmosquitto;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0B9CC8C174D67DC00698194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RabbitmqCookBook/RabbitmqCookBook-Prefix.pch";
+				HEADER_SEARCH_PATHS = "libmosquitto/**";
+				INFOPLIST_FILE = "RabbitmqCookBook/RabbitmqCookBook-Info.plist";
+				LIBRARY_SEARCH_PATHS = "libmosquitto/**";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E0B9CC8D174D67DC00698194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RabbitmqCookBook/RabbitmqCookBook-Prefix.pch";
+				HEADER_SEARCH_PATHS = "libmosquitto/**";
+				INFOPLIST_FILE = "RabbitmqCookBook/RabbitmqCookBook-Info.plist";
+				LIBRARY_SEARCH_PATHS = "libmosquitto/**";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0B9CC63174D67DC00698194 /* Build configuration list for PBXProject "RabbitmqCookBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0B9CC89174D67DC00698194 /* Debug */,
+				E0B9CC8A174D67DC00698194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0B9CC8B174D67DC00698194 /* Build configuration list for PBXNativeTarget "RabbitmqCookBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0B9CC8C174D67DC00698194 /* Debug */,
+				E0B9CC8D174D67DC00698194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0B9CC60174D67DC00698194 /* Project object */;
+}

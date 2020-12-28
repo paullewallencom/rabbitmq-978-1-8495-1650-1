@@ -1,0 +1,1 @@
+java -cp rmq-0.0.1-SNAPSHOT.jar:./../../../../RabbitmqClients/Java/rabbitmq-client.jar com.test.rmq.Main

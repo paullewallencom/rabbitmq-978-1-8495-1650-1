@@ -1,0 +1,8 @@
+---
+applications:
+- name: myfirstapplication
+  memory: 512M
+  instances: 1
+  host: myfirstapplication
+  domain: cfapps.io
+  path: target/rmq-1.0.1-BUILD-SNAPSHOT.war

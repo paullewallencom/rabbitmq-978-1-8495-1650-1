@@ -1,0 +1,4 @@
+V	140512235820Z		01	unknown	/CN=vm32/O=server
+V	140513000105Z		02	unknown	/CN=vm32/O=client
+V	140516182021Z		03	unknown	/CN=NBSigiHome/O=client
+V	140516182136Z		04	unknown	/CN=NBSigiHome/O=client

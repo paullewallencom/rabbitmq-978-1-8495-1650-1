@@ -1,0 +1,14 @@
+---
+applications:
+- name: myrabbitmqtest
+  memory: 512M
+  instances: 1
+  host: myrabbitmqtest
+  domain: cfapps.io
+  path: target/rmq-1.0.1-BUILD-SNAPSHOT.war
+  services:
+    amqp1:
+      label: cloudamqp
+      provider: cloudamqp
+      version: n/a
+      plan: lemur

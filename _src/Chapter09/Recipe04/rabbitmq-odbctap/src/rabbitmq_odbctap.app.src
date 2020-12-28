@@ -1,0 +1,12 @@
+{application, rabbitmq_odbctap,
+ [{description, "Embedded Rabbit ODBC tap"},
+  {vsn, "0.0.0"},
+  {modules, []},
+  {registered, []},
+  {mod, {rabbit_odbctap, []}},
+  {env, [{dsn,"DSN"},
+         {user,"guest"},
+         {password, "guest"},
+         {queue, "tapped_queue"}
+        ]},
+  {applications, [kernel, stdlib, rabbit, amqp_client]}]}.
